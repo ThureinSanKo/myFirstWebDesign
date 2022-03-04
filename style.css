@@ -31,7 +31,6 @@ nav .navbar-brand {
 .btn {
     padding : 10px;
     font-size : 20px;
-    border-radius: 0;
     box-shadow: var(--box-shadow);
 }
 
