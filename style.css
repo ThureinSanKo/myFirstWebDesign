@@ -1,0 +1,297 @@
+:root{
+    --primary : #0275d8;
+    --box-shadow : 5px 3px 6px rgba(0,0,0,0.5);
+    --body : #888;
+}
+body {
+    line-height: 1.5;
+    color : var(--body);
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color : black;
+    font-weight: 500;
+}
+a {
+    color : black;
+}
+nav {
+    box-shadow: var(--box-shadow);
+}
+nav .navbar-brand {
+    font-size : 30px;
+    font-weight: 700;
+}
+
+.navbar .nav-link.active {
+    color : var(--primary) !important;
+}
+
+.btn {
+    padding : 10px;
+    font-size : 20px;
+    border-radius: 0;
+    box-shadow: var(--box-shadow);
+}
+
+.btn:active {
+    box-shadow : none;
+    transform : translateY(1.1px);
+}
+
+section {
+    padding-top : 100px;
+    padding-bottom : 100px;
+}
+
+section .features {
+    padding-bottom: 0;
+}
+
+.hero {
+    background-image: url(image/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-position : center;
+    background-size : cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.hero::after {
+    content : "";
+    height : 100%;
+    width : 100%;
+    position : absolute;
+    top : 0;
+    left : 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index : -1;
+}
+
+i{
+    
+    padding : 10px;
+    font-size : 25px;
+    color : white;
+    border : 1px solid blue;
+    border-radius : 100px;
+    background-color: var(--primary);
+    color : white;
+    flex : none;
+}
+.service-card {
+    box-shadow: var(--box-shadow);
+    position : relative;
+    z-index : 2;
+    overflow : hidden;
+
+}
+.service-card:hover {
+    transform : translateY(1.3px);
+    box-shadow : none;
+    border : none;
+}
+.service-card::after {
+    content: "";
+    height : 100%;
+    width : 100%;
+    position : absolute;
+    top : -100%;
+    left : 0;
+    background-color: var(--primary);
+    z-index : -1;
+    opacity : 0;
+    transition-duration: 400ms;
+    transition-property:all;
+}
+
+.service-card:hover h2,
+ .service-card:hover p{
+    color : white;
+}
+
+.service-card:hover i{
+    color : var(--primary);
+    background-color: white;
+}
+
+.service-card:hover::after {
+    content : "";
+    opacity : 1;
+    top : 0;
+}
+
+.features-img {
+    background-image: url(image/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-position : center;
+    background-size : cover;
+    min-height : 500px;
+    max-height: 650px;
+    margin-top : 0;
+    box-shadow: var(--box-shadow);
+}
+
+.feature-text {
+    padding-top : 120px;
+    padding-bottom : 120px;
+}
+
+.features i {
+    font-size : 20px;
+    padding : 10px;
+}
+
+img {
+    width : 100%;
+}
+
+.card-body {
+    margin : 0;
+    padding : 0;
+}
+
+.project-card {
+    overflow: hidden;
+    position : relative;
+    box-shadow: var(--box-shadow);
+
+}
+.project-card .overlay {
+    height : 100%;
+    width: 100%;
+    position : absolute;
+    top : 0;
+    left : 0;
+    background-color: rgba(0,0,0,0.8);
+    display : flex;
+    align-items: flex-end;
+    opacity: 0;
+    transition-duration:350ms;
+    transition-property: opacity;
+}
+
+.project-card .card-body img{
+    transition : all 400ms ease;
+}
+
+.project-card .card-body:hover img {
+    transform : scale(1.1);
+}
+
+.project-card .card-body:hover .overlay {
+    opacity : 1;
+}
+
+.pricing-icon {
+   color: blue;
+   background-color : white;
+   border : 0;
+   padding : 4px;
+}
+
+.pricing-card h1 {
+    font-size : 60px;
+    font-weight: 700;
+    
+}
+
+.pricing-card {
+    box-shadow: var(--box-shadow);
+
+}
+.pricing-card:hover {
+    box-shadow: none;
+    transform : translateY(1.2px);
+    transition: all 150ms ease;
+}
+
+.team-card img {
+    border-radius : 100px;
+    height : 150px;
+    width : 150px;
+}
+
+.team-card i{
+    font-size : 20px;
+    padding : 10px;
+    transition: all 400ms ease;
+}
+
+.team-card a:hover i{
+    background : white;
+    color : blue;
+}
+
+
+.team-card {
+    box-shadow: var(--box-shadow) ;
+    transition : all 500ms ease;
+}
+
+.team-card:hover {
+    
+    box-shadow: none;
+    transform : translateY(1.2px)
+}
+
+.blog .blog-card {
+    box-shadow: var(--box-shadow);
+    transition: all 400ms ease;
+}
+
+.blog-card a {
+    text-decoration : none;
+}
+
+.blog .blog-card:hover {
+    box-shadow: none;
+    transform : translateY(1.1px);
+}
+
+label {
+    color : black;
+}
+
+footer #logo h1
+{
+    font-weight : 900;
+}
+footer {
+    padding-top : 120px;
+    background-color: rgb(37, 37, 37);
+}
+
+footer h1 {
+    color : rgb(255, 255, 255);
+    
+}
+
+footer ul a{
+    color : rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+footer ul a:hover {
+    color : rgb(255, 255, 255);
+}
+footer ul a:active {
+    color : blue;
+}
+footer ul li{
+    line-height: 1.7;
+    list-style-type: none;
+}
+
+footer .second i {
+    font-size: 20px;
+    margin : 5px;
+}
+footer .second a:hover i {
+    background-color: white;
+    color : var(--primary);    
+}
+
+
+
+
+
+
