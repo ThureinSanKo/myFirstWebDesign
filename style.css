@@ -136,8 +136,11 @@ i{
 }
 
 .features i {
-    font-size : 20px;
+    font-size : 30px;
     padding : 10px;
+    border-color : white;
+    color : blue;
+    background-color: white;
 }
 
 img {
@@ -213,12 +216,14 @@ img {
 .team-card i{
     font-size : 20px;
     padding : 10px;
+    background-color: white;
+    color : blue;
     transition: all 400ms ease;
 }
 
 .team-card a:hover i{
-    background : white;
-    color : blue;
+    background-color : blue;
+    color : white;
 }
 
 
